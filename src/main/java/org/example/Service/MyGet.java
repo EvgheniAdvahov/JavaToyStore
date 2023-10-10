@@ -1,5 +1,7 @@
 package org.example.Service;
 
+import org.example.Data.Customer;
+
 import java.util.Random;
 
 public class MyGet {
@@ -13,7 +15,7 @@ public class MyGet {
         this.n3 = n3;
     }
 
-    public Integer Get(){
+    public Integer Get(Customer customer){
         int sum = n1 + n2 + n3;
         System.out.println("n1=" + n1 + " n2=" + n2+" n3="+ n3 + " Sum = "+ sum);
         Random rand = new Random();

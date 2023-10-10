@@ -2,6 +2,7 @@ package org.example.Controller;
 
 import org.example.Data.Customer;
 import org.example.Data.Toy;
+import org.example.Service.CustomerList;
 import org.example.Service.MyGet;
 import org.example.Service.Myput;
 import org.example.Service.Save;
@@ -15,14 +16,17 @@ public class Controller {
             myToyList.get(1).getChance(),
             myToyList.get(2).getChance());
     PriorityQueue<Customer> priorityQueue = new PriorityQueue<>();
+    CustomerList customerList = new CustomerList();
     Save save = new Save();
     public void start(){
+        priorityQueue =customerList.CustomerDraw();
+        System.out.println(priorityQueue);
         System.out.println(myToyList);
-        System.out.println(myGet.Get());
-        for (int i = 0; i < 10; i++) {
-            priorityQueue.add(new Customer("customer"+i));
-            save.SaveToFile(myGet.Get());
+        int queueLength = priorityQueue.size();
+        for (int i = 0; i < queueLength; i++) {
+            Customer customerWinner = priorityQueue.poll();
+            System.out.println("customerWinner = " + customerWinner);
+            save.SaveToFile(myGet.Get(customerWinner));
         }
-
     }
 }

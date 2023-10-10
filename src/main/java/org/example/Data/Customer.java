@@ -27,7 +27,7 @@ public class Customer implements Comparable<Customer> {
 
     @Override
     public String toString() {
-        return "Customer {" +
+        return "Customer{" +
                 "name='" + name + '\'' +
                 ", id=" + id +
                 '}';
