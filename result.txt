@@ -1,5 +1,20 @@
-
-customer1win-3
-customer2win-3
-customer3win-3
-customer4win-1
+customer1 win: id=3 doll
+customer2 win: id=1 robot
+customer3 win: id=3 doll
+customer4 win: id=1 robot
+customer5 win: id=3 doll
+customer6 win: id=3 doll
+customer7 win: id=3 doll
+customer8 win: id=3 doll
+customer9 win: id=1 robot
+customer10 win: id=1 robot
+customer11 win: id=1 robot
+customer12 win: id=1 robot
+customer13 win: id=3 doll
+customer14 win: id=3 doll
+customer15 win: id=3 doll
+customer16 win: id=3 doll
+customer17 win: id=3 doll
+customer18 win: id=3 doll
+customer19 win: id=3 doll
+customer20 win: id=3 doll

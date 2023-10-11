@@ -12,9 +12,9 @@ import java.util.PriorityQueue;
 
 public class Controller {
     List<Toy> myToyList = Myput.putToy();
-    MyGet myGet = new MyGet(myToyList.get(0).getChance(),
-            myToyList.get(1).getChance(),
-            myToyList.get(2).getChance());
+    MyGet myGet = new MyGet(myToyList.get(0),
+            myToyList.get(1),
+            myToyList.get(2));
     PriorityQueue<Customer> priorityQueue = new PriorityQueue<>();
     CustomerList customerList = new CustomerList();
     Save save = new Save();
