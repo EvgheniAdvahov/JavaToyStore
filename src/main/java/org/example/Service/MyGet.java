@@ -16,10 +16,9 @@ public class MyGet {
         toy1 = toyA;
         toy2 = toyB;
         toy3 = toyC;
-        this.n1 = toy1.getChance();
+        this.n1 = toyA.getChance();
         this.n2 = toyB.getChance();
         this.n3 = toyC.getChance();
-
     }
 
     public String Get(Customer customer){
@@ -30,7 +29,7 @@ public class MyGet {
         if (chance < ((n1 * 100)/sum) ) {
             System.out.println((n1 * 100)/sum + "%");
             return customer.getName() + " win: id=" + Integer.toString(toy1.getId()) + " " + toy1.getName();
-        } else if (chance < ((n2 * 100)/sum)) {
+        } else if (chance < (((n2 * 100)/sum)+ ((n2 * 100)/sum))) {
             System.out.println((n2 * 100)/sum + "%");
             return customer.getName() + " win: id=" + Integer.toString(toy2.getId()) + " " + toy2.getName();
         }else{
