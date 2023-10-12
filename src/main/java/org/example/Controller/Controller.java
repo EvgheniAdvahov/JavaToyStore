@@ -1,5 +1,4 @@
 package org.example.Controller;
-
 import org.example.Data.Customer;
 import org.example.Data.Toy;
 import org.example.Service.CustomerList;

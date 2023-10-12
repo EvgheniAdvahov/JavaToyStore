@@ -1,7 +1,5 @@
 package org.example.Service;
-
 import org.example.Data.Customer;
-
 import java.util.PriorityQueue;
 import java.util.Scanner;
 

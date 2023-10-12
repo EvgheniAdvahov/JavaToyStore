@@ -1,8 +1,6 @@
 package org.example.Service;
-
 import org.example.Data.Customer;
 import org.example.Data.Toy;
-
 import java.util.Random;
 
 public class MyGet {
