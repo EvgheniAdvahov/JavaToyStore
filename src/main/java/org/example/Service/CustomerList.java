@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class CustomerList {
     PriorityQueue<Customer> priorityQueue = new PriorityQueue<>();
-
     public PriorityQueue<Customer> CustomerDraw(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите кол-во покупателей");
